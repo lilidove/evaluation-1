@@ -1,0 +1,22 @@
+{
+  "name": "evaluation-1",
+  "version": "1.0.0",
+  "description": "evaluation html-css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/lilidove/evaluation-1.git"
+  },
+  "author": "Lydie L",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lilidove/evaluation-1/issues"
+  },
+  "homepage": "https://github.com/lilidove/evaluation-1#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "jquery": "^3.6.0"
+  }
+}

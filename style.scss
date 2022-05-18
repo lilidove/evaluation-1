@@ -1,0 +1,216 @@
+/* Colors variables */
+
+$lilac: #e4b4f1;
+$golden: #ffcb08;
+$darkpink: #c6168d;
+$darkgrey: #585858;
+
+/* GENERAL and MOBILE specifications */
+
+$header-height: 100px;
+$footer-height: 72px;
+
+body {
+    height: 100%;
+    color: $darkgrey;
+}
+
+main {
+    max-width: 1000px;
+    height: calc( 100% - #{$header-height} - #{$footer-height} );
+}
+
+header {
+    overflow: hidden;
+    height: 100px; 
+}
+
+a.header-link, a:hover.header-link, a:visited.header-link {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.8em;
+    position: relative;
+    left: 130px;
+}
+
+h2 {
+    color: $darkpink;
+    font-size: 32px;
+}
+
+.bg-dark-lilac {
+    background-color: darken($lilac, 40%);
+}
+
+.bg-lilac {
+    background-color: $lilac;
+}
+
+.text-darkenlilac {
+    color: darken($lilac, 40%);
+}
+
+.nav-link.disabled {
+    font-weight: 700;
+    color: $darkpink;
+}
+
+.navbar-collapse {
+    top: 100px;
+    background-color: $lilac;
+    transition: all 0.5s ease 0s;
+    position: fixed;
+}
+
+.navbar-toggler {
+    border: 1px solid white;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-shadow {
+    box-shadow: 0px 3px 10px #6a696957;
+}
+
+li a.nav-link {
+    color: darken($lilac, 40%);
+    padding: 10px 0 10px 0;
+    text-decoration: none;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    text-decoration: none;
+    padding: 10px 10px;
+}
+
+.btn-darkpink {
+    border: 1px solid $darkpink;
+    background-color: $darkpink;
+}
+
+.btn-darkpink, a:visited.btn-darkpink {
+    color: white;
+}
+
+.img-gradient-right {
+    mask-image:-webkit-gradient(linear, left bottom, right bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))
+}
+
+.w-s-40 {
+    width: 40%;
+    min-width: 17rem;
+}
+
+.img-max-400 {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+figcaption {
+    color: lighten($color: $darkgrey, $amount: 30%);
+    font-style: italic;
+}
+
+/* TABLET specifications */
+
+@media screen and (min-width: 720px){
+
+    $header-height: 100px;
+    $footer-height: 72px;
+
+    main {
+        height: calc( 100% - #{$header-height} - #{$footer-height} )
+    }
+
+    h1 {
+        font-family: 'Pacifico', cursive;
+        font-size: 2.5em;
+    } 
+
+}
+
+/* DESKTOP specifications */
+@media screen and (min-width: 960px){
+
+    $header-height: 200px;
+    
+    main {
+        height: calc( 100% - #{$header-height} - #{$footer-height} )
+    }
+
+    header {
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 4em;
+        left: 250px;
+    }
+
+    h2 {
+        color: $darkpink;
+        font-size: 40px;
+    }
+
+    .navbar-collapse {
+        top: 0;
+        background-color: rgba(255, 255, 255, 0);
+        position: initial;
+        justify-content: end;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding: 0 0 5px 0;
+    }
+
+    .nav-link {
+        font-size: 18px;
+        color: white;
+    }
+
+    li.nav-item>a.nav-link.disabled {
+        color: $golden;
+    }
+
+    li a.nav-link, li a:visited.nav-link {
+        color: white;
+        margin: 0 10px 0 10px;
+        text-decoration: none;
+        transition-property: color;
+        transition-duration: 0.5s; 
+    }
+    
+    li a:hover.nav-link {
+        color: $golden;
+    }
+
+    .navbar-shadow {
+        box-shadow: none;
+    }
+
+    .button {
+        transition-property: background-color color;
+        transition-duration: 0.5s;    
+    }
+
+    .btn-darkpink:hover, .btn-darkpink a:hover {
+        color: white;
+        background-color: lighten($color: $darkpink, $amount: 30%);
+        border: 1px solid lighten($color: $darkpink, $amount: 30%);
+    }
+
+    .w-lg-25 {
+        width: 25%;
+    }
+}
