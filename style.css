@@ -32,6 +32,11 @@ h2 {
   font-size: 32px;
 }
 
+h4 {
+  color: #9722b7;
+  margin-bottom: 2em;
+}
+
 .bg-dark-lilac {
   background-color: #9722b7;
 }
@@ -97,8 +102,41 @@ li a.nav-link {
   background-color: #c6168d;
 }
 
-.btn-darkpink, a:visited.btn-darkpink {
+.btn-lilac {
+  border: 1px solid #b633d9;
+  background-color: #b633d9;
+}
+
+.btn-darkpink, a:visited.btn-darkpink, .btn-lilac, a:visited.btn-lilac {
   color: white;
+}
+
+.btn-darkpink:hover, .btn-darkpink a:hover {
+  color: white;
+  background-color: #f184ce;
+  border: 1px solid #f184ce;
+}
+
+.btn-lilac:hover, .btn-lilac a:hover {
+  color: #9722b7;
+  background-color: #e4b4f1;
+  border: 1px solid #e4b4f1;
+}
+
+aside {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: white;
+}
+
+.no-list-style {
+  list-style: none;
+}
+
+.gold-underline {
+  border-bottom: 4px solid #ffcb08;
 }
 
 .img-gradient-right {
@@ -111,15 +149,57 @@ li a.nav-link {
   min-width: 17rem;
 }
 
+.w-s-100 {
+  width: 100%;
+}
+
 .img-max-400 {
   width: 100%;
   max-width: 400px;
   height: auto;
 }
 
+.img-max-200 {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
 figcaption {
   color: #a5a5a5;
   font-style: italic;
+}
+
+#diagnostic, #types, #manifestations {
+  padding-top: 86px;
+  margin-top: -86px;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #c6168d;
+  background-color: #fce0f2;
+}
+
+.accordion-button:focus {
+  border-color: #c6168d;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23c6168d'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.bloc-h4 {
+  background-color: #fffae8;
+  padding: 2em 2em;
+  margin-bottom: 20px;
+}
+
+.d-info-menu {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 /* TABLET specifications */
@@ -196,6 +276,18 @@ figcaption {
   }
   .w-lg-25 {
     width: 25%;
+  }
+  #diagnostic, #types, #manifestations {
+    padding-top: 86px;
+    margin-top: -86px;
+  }
+  .bloc-h4 {
+    padding: 3em 4em;
+  }
+  .d-info-menu {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
