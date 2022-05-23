@@ -3,3 +3,4 @@
 3) Creation of the homepage (index.html)
 4) Creation of style.scss
 5) Creation of the page En savoir plus (info.html)
+6) Creation of the page Evénement (event.html)
