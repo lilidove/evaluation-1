@@ -55,7 +55,7 @@ h4 {
 }
 
 .navbar-collapse {
-  top: 100px;
+  top: 99px;
   background-color: #e4b4f1;
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
@@ -202,14 +202,74 @@ figcaption {
           justify-content: space-between;
 }
 
+input#name, input#surname, input#phone {
+  max-width: 300px;
+}
+
+div.card > img {
+  height: 180px;
+  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-category {
+  padding: 10px 0 5px 0;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: #c55ee1;
+}
+
+.card-title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.modal-dialog form {
+  width: 800px;
+}
+
+div.modal-body p, div.modal-body ul {
+  max-width: 600px;
+  margin: 10px auto;
+}
+
+div.modal-body p {
+  text-align: center;
+}
+
+.text-overlay {
+  position: absolute;
+  right: 0;
+  bottom: 71px;
+  height: 100%;
+  width: 100%;
+  content: "";
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, white), color-stop(5%, rgba(255, 255, 255, 0)));
+  background: linear-gradient(to top, white 0, rgba(255, 255, 255, 0) 5%);
+  pointer-events: none;
+}
+
+.btn-check:focus + .btn, .btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 /* TABLET specifications */
 @media screen and (min-width: 720px) {
   main {
     height: calc( 100% - 100px - 72px);
   }
-  h1 {
-    font-family: 'Pacifico', cursive;
-    font-size: 2.5em;
+  .nav-link {
+    font-size: 18px;
+    color: white;
   }
 }
 
@@ -221,8 +281,11 @@ figcaption {
   header {
     height: 200px;
   }
+  body, .accordion-button {
+    font-size: 1.2rem;
+  }
   h1 {
-    font-size: 4em;
+    font-size: 3em;
     left: 250px;
   }
   h2 {
@@ -241,8 +304,7 @@ figcaption {
     padding: 0 0 5px 0;
   }
   .nav-link {
-    font-size: 18px;
-    color: white;
+    font-size: 20px;
   }
   li.nav-item > a.nav-link.disabled {
     color: #ffcb08;
@@ -288,6 +350,9 @@ figcaption {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  li.art-card {
+    width: 18rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
