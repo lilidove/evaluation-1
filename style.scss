@@ -25,11 +25,6 @@ header {
     height: 100px; 
 }
 
-a.header-link, a:hover.header-link, a:visited.header-link {
-    color: white;
-    text-decoration: none;
-}
-
 h1 {
     font-family: 'Pacifico', cursive;
     font-size: 1.8em;
@@ -41,7 +36,6 @@ h2 {
     color: $darkpink;
     font-size: 32px;
 }
-
 
 h4 {
     color: darken($color: $lilac, $amount: 40%);
@@ -58,6 +52,11 @@ h4 {
 
 .text-darkenlilac {
     color: darken($lilac, 40%);
+}
+
+a.header-link, a:hover.header-link, a:visited.header-link {
+    color: white;
+    text-decoration: none;
 }
 
 .nav-link.disabled {
@@ -97,6 +96,8 @@ li a.nav-link {
     border-radius: 3px;
     text-decoration: none;
     padding: 10px 10px;
+    transition-property: background-color color;
+    transition-duration: 0.5s;   
 }
 
 .btn-darkpink {
@@ -340,17 +341,6 @@ div.modal-body p {
         box-shadow: none;
     }
 
-    .button {
-        transition-property: background-color color;
-        transition-duration: 0.5s;    
-    }
-
-    .btn-darkpink:hover, .btn-darkpink a:hover {
-        color: white;
-        background-color: lighten($color: $darkpink, $amount: 30%);
-        border: 1px solid lighten($color: $darkpink, $amount: 30%);
-    }
-
     .w-lg-25 {
         width: 25%;
     }
@@ -371,6 +361,4 @@ div.modal-body p {
     li.art-card {
         width: 18rem;
     }
-
-
 }

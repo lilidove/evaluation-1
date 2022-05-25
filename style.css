@@ -15,11 +15,6 @@ header {
   height: 100px;
 }
 
-a.header-link, a:hover.header-link, a:visited.header-link {
-  color: white;
-  text-decoration: none;
-}
-
 h1 {
   font-family: 'Pacifico', cursive;
   font-size: 1.8em;
@@ -47,6 +42,11 @@ h4 {
 
 .text-darkenlilac {
   color: #9722b7;
+}
+
+a.header-link, a:hover.header-link, a:visited.header-link {
+  color: white;
+  text-decoration: none;
 }
 
 .nav-link.disabled {
@@ -95,6 +95,10 @@ li a.nav-link {
   border-radius: 3px;
   text-decoration: none;
   padding: 10px 10px;
+  -webkit-transition-property: background-color color;
+  transition-property: background-color color;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 .btn-darkpink {
@@ -324,17 +328,6 @@ div.modal-body p {
   .navbar-shadow {
     -webkit-box-shadow: none;
             box-shadow: none;
-  }
-  .button {
-    -webkit-transition-property: background-color color;
-    transition-property: background-color color;
-    -webkit-transition-duration: 0.5s;
-            transition-duration: 0.5s;
-  }
-  .btn-darkpink:hover, .btn-darkpink a:hover {
-    color: white;
-    background-color: #f184ce;
-    border: 1px solid #f184ce;
   }
   .w-lg-25 {
     width: 25%;
