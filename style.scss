@@ -127,9 +127,6 @@ li a.nav-link {
 }
 
 aside {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
     background: white;
 }
 
@@ -197,7 +194,8 @@ figcaption {
 }
 
 .d-info-menu {
-    justify-content: space-between;
+    justify-content: center;
+    font-size: 0.9em;
 }
 
 input#name, input#surname, input#phone {
@@ -277,6 +275,10 @@ div.modal-body p {
         color: white;
     }
 
+    .d-info-menu {
+        font-size: 1em;
+    }
+
 }
 
 /* DESKTOP specifications */
@@ -346,16 +348,12 @@ div.modal-body p {
     }
 
     #diagnostic, #types, #manifestations {
-        padding-top: 86px;
-        margin-top: -86px;
+        padding-top: 90px;
+        margin-top: -90px;
     }
 
     .bloc-h4 {
         padding: 3em 4em;
-    }
-
-    .d-info-menu {
-        justify-content: center;
     }
 
     li.art-card {
